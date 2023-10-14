@@ -9,12 +9,22 @@
         // insert your code in this script tag!
 
         function square(number) {
-            return 0;
+            
+            if(typeof(number) == "number")
+            {
+                return number * number;
+            }
+        return -1;
         }
 
 
         function numberString(i) {
-            return ""; 
+            let num = "";
+            for(var j = 1; j < i +1; j++)
+            {
+                 num = num + j;
+            }
+            return num; 
         }
     </script>
 </body>
