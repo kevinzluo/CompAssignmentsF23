@@ -14,18 +14,28 @@ y.repeat(10); // write the output in this comment
 
 ```js
 function square(i) = {
-    return 0; // complete this code
+  let i = number; 
+  let asd = i*i;
+  console.log (asd)
+  return asd;
 }
 
-square(2.5); // write the output in this comment!
-square("hello") // same here
+square(2.5); //6.25
+square("hello") // NaN
 ```
 
 5.
 
 ```js
 function square(i) {
-  return 0; // complete this code
+  if (typeof number != "number") {
+    return -1;
+    }
+    let i = number; 
+    let asd = i*i;
+    console.log (asd) 
+    return asd;
+  return 0; // 
 }
 ```
 
@@ -33,6 +43,14 @@ function square(i) {
 
 ```js
 function numberString(i) {
-  return ""; // complete this code
+  let result = ""
+  if (i > 0){
+    for (let a = 1; a <= i; a++) {
+      result += a;
+      }
+      return result; 
+      }
+    return -1; 
+  }
+  return ""; //
 }
-`
