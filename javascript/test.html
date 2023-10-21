@@ -15,7 +15,7 @@
 
 
         function numberString(i) {
-            if (i <= 0) return ""; 
+            if (typeof i != "number" || i != Math.floor(i)) return ""; 
             let res = ""; 
             for (let x = 1; x <= i; x++) res = res.concat(x.toString()); 
             return res; 
