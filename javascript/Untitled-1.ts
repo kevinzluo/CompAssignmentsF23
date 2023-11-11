@@ -1,8 +1,8 @@
+
 function square(number: number): number 
 {
     return number * number;
 }
-
 
 function numberString(i: number): string | number {
     if (i < 0) 
