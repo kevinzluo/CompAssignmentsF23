@@ -1,6 +1,10 @@
-function square(number) {
-    return number * number;
+function square(n) {
+    return n * n;
 }
 function numberString(i) {
-    return "";
+    var string = "";
+    for (var j = 0; j < i; j++) {
+        string += j + 1;
+    }
+    return string;
 }

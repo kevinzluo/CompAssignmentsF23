@@ -6,26 +6,29 @@
 
 ```js
 var y = "Hello World";
-y.includes("hello"); // write the output in this comment
-y.repeat(10); // write the output in this comment
+y.includes("hello"); // true
+y.repeat(10); // Hello World (repeated ten times)
 ```
 
 4.
 
 ```js
 function square(i) = {
-    return 0; // complete this code
+    return (i*i); // complete this code
 }
 
-square(2.5); // write the output in this comment!
-square("hello") // same here
+square(2.5); // 6.25
+square("hello") // uncaught reference error
 ```
 
 5.
 
 ```js
 function square(i) {
-  return 0; // complete this code
+  if (typeof i === "number") {
+    return (i*i);
+  }
+  return (-1); // complete this code
 }
 ```
 
@@ -33,6 +36,15 @@ function square(i) {
 
 ```js
 function numberString(i) {
-  return ""; // complete this code
+  let string = "";
+              if ((typeof i === "number") && (i > 0) && ((i % 1) === 0)) {
+                  for (let j = 0; j < i; j++) {
+                      string += j + 1;
+                  }
+              }
+              else {
+                  string = "Please put in positive integer"
+              }
+              return string; 
 }
 `
