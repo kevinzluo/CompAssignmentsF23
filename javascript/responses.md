@@ -6,26 +6,27 @@
 
 ```js
 var y = "Hello World";
-y.includes("hello"); // write the output in this comment
-y.repeat(10); // write the output in this comment
+y.includes("hello"); // false
+y.repeat(10); // 'Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello World' 
 ```
 
 4.
 
 ```js
-function square(i) = {
-    return 0; // complete this code
+function square(i) {
+    return i*i;
 }
 
-square(2.5); // write the output in this comment!
-square("hello") // same here
+square(2.5); // 6.25
+square("hello") // NaN
 ```
 
 5.
 
 ```js
 function square(i) {
-  return 0; // complete this code
+  if (typeof i != "number") return -1; 
+  return i*i; 
 }
 ```
 
@@ -33,6 +34,9 @@ function square(i) {
 
 ```js
 function numberString(i) {
-  return ""; // complete this code
+  if (typeof i != "number" || i != Math.floor(i)) return ""; 
+  let res = ""; 
+  for (let x = 1; x <= i; x++) res = res.concat(x.toString()); 
+  return res; 
 }
 `
