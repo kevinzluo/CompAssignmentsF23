@@ -7,14 +7,19 @@
 <body>
     <script>
         // insert your code in this script tag!
-
         function square(number) {
-            return 0;
+            return number * number;
         }
 
 
         function numberString(i) {
-            return ""; 
+            let s = "";
+            if (i > 0) {
+                for (let k = 1; k <= i; k++) {
+                    s += k.toString();
+                }
+            }
+            return s;
         }
     </script>
 </body>
