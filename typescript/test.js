@@ -1,6 +1,12 @@
-function square(number) {
-    return number * number;
+function square(n) {
+    return n * n;
 }
 function numberString(i) {
-    return "";
+    var s = "";
+    if (i > 0) {
+        for (var k = 1; k <= i; k++) {
+            s += k.toString();
+        }
+    }
+    return s;
 }
